@@ -1,0 +1,254 @@
+html {
+   background: url(SAVE_20210818_161536.jpg) no-repeat center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 17px;           
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: grey;    
+  border-radius: 10px;      
+  border: 3px solid white;
+}
+
+div h2 {
+   text-align: center;
+   margin-top: 250px;
+   color: white;
+   font-family: 'Ramaraja', serif;
+   font-size: 50px;
+   letter-spacing: 3px;
+   word-spacing: 3px;
+   text-shadow: 4px 4px 4px #000000;
+}
+
+.desc {
+   text-align: center;
+   font-size: 20px;
+   margin: auto;
+   width: 70%;
+   margin-top: 200px;
+   font-family: 'Pragati Narrow', sans-serif;
+   color: black;
+   background-color: #C8E4FD;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border: double black;
+}
+
+
+ .slogan hr {
+   width: 30%;
+   margin: auto;
+}
+
+/* Navbar */
+ 
+ nav {
+   display: flex;
+   background-color: none; 
+   justify-content: space-around;
+   /*padding: 20px 0;*/
+   color: aliceblue;
+   height: 50px;
+   align-items: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }
+
+ nav .logo {
+   font-family: 'Lilita One', cursive;
+   letter-spacing: 3px;
+   font-size: 30px;
+   text-shadow: 2px 2px 2px black ;
+   -webkit-text-stroke: 1px black ;
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }
+
+
+
+ .active:hover {
+   color: white;
+   font-weight: bold;
+   text-decoration: underline;
+ }
+
+ nav .logo hr {
+   margin-top: 10px;
+ }
+
+ .btn {
+  background-color:#5CAEDC;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+ }
+
+.btn:hover {
+   box-shadow: 2px 2px 7px 1px aliceblue;
+}
+
+ nav ul {
+   display: flex;
+   list-style: none;
+   width: 40%;
+   justify-content: space-between;
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }
+
+ nav ul li a {
+   color: aliceblue;
+   text-decoration: none;
+   font-size: 15px;
+
+ }
+
+ nav ul li a:hover {
+   color: rgb(250, 240, 255);
+ }
+
+
+/* Menu Mobile */
+.menu-toggle {
+   display: none;
+   flex-direction: column;
+   height: 20px;
+   justify-content: space-between;
+   position: relative;
+}
+.menu-toggle input {
+   position: absolute;
+   width: 40px;
+   height: 28px;
+   left: -6px;
+   top: -5px;
+   cursor: pointer;
+   opacity: 0;
+   z-index: 2;
+}
+
+.menu-toggle span {
+   display: block;
+   width: 28px;
+   height: 3px;
+   background-color: aliceblue;
+   border-radius: 3px;
+   transition: all 0.5s;
+}
+
+
+/* Animasi Menu Mobile  */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+   background-color: white;
+   transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+   background-color: white;
+   transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+   transform: scale(0);
+   opacity: 0;
+}
+
+ /* Responsive */
+
+ /* Tablet */
+@media screen and (max-width: 1024px) {
+   nav ul {
+      width: 50%;
+   }
+   body h2 {
+      font-size: 35px;
+   }
+   nav .logo {
+      font-size: 35px;
+   }
+
+}
+
+
+
+/* Handphone atau Mobile */
+@media screen and (max-width: 576px) {
+   .menu-toggle {
+      display: flex;
+      z-index: 2;
+   }
+   nav ul {
+      position: absolute;
+      right: 0;
+      flex-direction: column;
+      top: 0;
+      height: 100vh;
+      align-items: center;
+      justify-content: space-evenly;
+      z-index: 2;
+      background-color: #0062AF;
+      width: 40%;
+      transform: translateX(100%);
+      transition: all 1s;
+      opacity: 0;
+      padding-bottom: 100px;
+      padding-top: 50px;
+   }
+   
+   nav ul.slide {
+   transform: translateX(0);
+   opacity: 1;
+   z-index: 2;
+   }
+
+   body h2 {
+      font-size: 23px;
+   }
+
+   nav .logo {
+      font-size: 23px;
+   }
+
+   .desc {
+      font-size: 19px;
+   }
+
+  .hilang {
+   opacity: 0;
+   transition: 500em;
+   transition: all 1s;
+   }
