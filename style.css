@@ -34,7 +34,7 @@ div h2 {
    text-align: center;
    margin-top: 250px;
    color: white;
-   font-family: 'Ramaraja', serif;
+   font-family:  'Caveat Brush', cursive;;
    font-size: 50px;
    letter-spacing: 3px;
    word-spacing: 3px;
@@ -47,12 +47,10 @@ div h2 {
    margin: auto;
    width: 70%;
    margin-top: 200px;
-   font-family: 'Pragati Narrow', sans-serif;
-   color: black;
-   background-color: #C8E4FD;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   border: double black;
+   font-family: 'Kalam', cursive;
+   color: white;
+   padding-top: 45px;
+   padding-bottom: 20px; 
 }
 
 
@@ -76,9 +74,9 @@ div h2 {
  }
 
  nav .logo {
-   font-family: 'Lilita One', cursive;
+   font-family:   'Lilita One', cursive;
    letter-spacing: 3px;
-   font-size: 30px;
+   font-size: 35px;
    text-shadow: 2px 2px 2px black ;
    -webkit-text-stroke: 1px black ;
    padding-top: 20px;
@@ -141,6 +139,7 @@ div h2 {
    height: 20px;
    justify-content: space-between;
    position: relative;
+   margin-left: 30px;
 }
 .menu-toggle input {
    position: absolute;
@@ -221,7 +220,7 @@ div h2 {
       justify-content: space-evenly;
       z-index: 2;
       background-color: #0062AF;
-      width: 40%;
+      width: 28%;
       transform: translateX(100%);
       transition: all 1s;
       opacity: 0;

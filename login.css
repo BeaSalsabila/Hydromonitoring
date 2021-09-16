@@ -42,6 +42,7 @@ body {
 	border: 2px solid black;
 	border-radius: 30px;
 	background-color: #0000006B;
+	outline: none;
 }
 
 .login .input-group input {
@@ -62,6 +63,7 @@ body {
 	border: 2px solid black;
 	border-radius: 30px;
 	background-color: grey;
+	cursor: pointer;
 }
 
 .login .signup {

@@ -1,37 +1,116 @@
+html {
+   background: url(desk-with-objects.jpg) no-repeat center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
 }
-.navbar {
+
+ul {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  right: 50%;
   width: 100%;
-  background-color: #C8E4FD;
-  overflow: auto;
-  border-bottom: 1px solid black;
-}
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 20px 0;
+  background:;
+  display: flex;
+  border-radius: 20px;
+  }
 
-.menu {
-	float: right;
-}
-
-.navbar a {
+ul li {
+  list-style: none;
   text-align: center;
-  padding-right: 30px;
-  padding-left: 30px;
-  color: black;
-  text-decoration: none;
-  font-size: 25px;
-  float: left;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: block;
+  border-right: 1px solid rgb(0, 0, 0, 0.2);
 }
 
-.navbar a:hover {
+ul li:last-child {
+  border-right: none;
+}
+
+
+ul li a{
+  text-decoration: none;
+  padding: 0 100px;
+  display: block;
+  padding-top: 20px;
+  padding-left: 105px;
+}
+ul li a .icons{
+width: 40px;
+height: 35px;
+text-align: center;
+overflow: hidden;
+margin: 0 auto 7px;
+}
+
+ul li a .icons .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 35px;
+  font-size: 27px;
+  transition: 0.5s;
   color: white;
 }
 
-.active {
-	padding-left: 30px;
-  padding-right: 30px;
+ul li a .icons .fa:last-child {
+color: deepskyblue;
+}
+
+ul li a:hover .icons .fa {
+  transform: translateY(-100%);
+}
+
+ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul li a .name span {
+  display: block;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  transition: 0.5s;
+}
+
+ul li a .name span:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: deepskyblue;
+}
+
+ul li a:hover .name span {
+  transform: translateY(25px);
+}
+
+.menuToggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: skyblue;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+
 }
 
 .sungai {
@@ -41,11 +120,24 @@
   text-align: center;
   height: 500px;
   border-radius: 30px;
+  border: 1px solid black;
+  font-family: 'Patrick Hand', cursive;
 }
+
+.Education {
+  font-size: 80px;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  margin-top: 100px;
+  color: skyblue;
+  -webkit-text-stroke: 2px black;
+}
+
 
 h2 {
   font-size: 23px;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 50px;
   margin-left: 40px;
   background-color: #C8E4FD;
@@ -53,6 +145,7 @@ h2 {
   margin-right: 850px;
   padding: 10px 20px;
   border: 1px solid black;
+  font-family: 'Patrick Hand', cursive;
 }
 
 .kualitas {
@@ -62,7 +155,8 @@ h2 {
   text-align: center;
   height: 500px;
   border-radius: 30px;
-
+  border: 1px solid black;
+  font-family: 'Patrick Hand', cursive;
 }
 
 .upaya {
@@ -72,7 +166,9 @@ h2 {
   text-align: center;
   height: 500px;
   border-radius: 30px;
-
+  border: 1px solid black;
+  font-family: 'Patrick Hand', cursive;
+  margin-bottom: 20px;
 }
 
 body::-webkit-scrollbar {
@@ -89,19 +185,57 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid white;
 }
 
-@media screen and (max-width: 576px) {
-  .active {
-    display: inline-block;
-    padding: 0 0;
-    float: none;
+@media screen and (max-width: 996px) {
+  .menuToggle {
+  display: block;
+}
+
+  ul {
+    padding: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: skyblue;
+    z-index: 3;
+    top: 70%;
+    border-radius: 30px;
+    transform: translate(-50%,-50%) scaleY(0);
   }
 
-  .navbar a {
-    float: none;
+  ul.active {
+    transform:  translate(-50%,-50%) scaleY(1);
+  }
+
+    ul li {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 10px 0;
+    padding-right: 25px;
+  }
+
+
+  ul li:last-child {
+    border-bottom: none;
+  }
+
+  ul li a {
+  padding: 0 20px;  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  }
+
+  ul li a .icon {
     display: inline-block;
-    margin-right: none;
-    padding: 10px 10px;
-    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  ul li a .name {
+    width: auto;
+    display: inline-block;
+
   }
 
   h2 {
