@@ -73,7 +73,16 @@ body {
 }
 
 .icon {
-	font-size: 30px;
+	font-size: 25px;
 	color: #000;
 	background-color: 
+}
+
+.icon img {
+	border: 1px solid black;
+	padding: 5px 5px;
+	background-color: #FAEEE0;
+	border-radius: 10px;
+	width: 25px;
+	height: 25px;
 }

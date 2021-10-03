@@ -220,7 +220,7 @@ div h2 {
       justify-content: space-evenly;
       z-index: 2;
       background-color: #0062AF;
-      width: 28%;
+      width: 30%;
       transform: translateX(100%);
       transition: all 1s;
       opacity: 0;
