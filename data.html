@@ -97,64 +97,71 @@
 	<br>
 	<br>
 	<br>
-	<div style="text-align: center;">
-		<a href="monitoring.html"><button style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width:150px; background-color: #C8E4FD; outline: none;">Monitoring</button></a>
-		<a href="monitoring1.html"><button style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width:150px; background-color: #C8E4FD; outline: none;">Aranio</button></a>
-		<a href="monitoring2.html"><button style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width:150px; background-color: #C8E4FD; outline: none;">Karang Intan</button></a>
-		<a href="monitoring3.html"><button style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width:150px; background-color: #C8E4FD; outline: none;">Sungai Kembang</button></a>
-	</div>
+	<?php?>
+	<form>
+			<select type="submit" class="pilih" name="nama_sungai" type="submit" style="width:200px; height:32px; font-size: 20px; font-family: 'Patrick Hand', cursive; outline: none; margin-top: 40px; border-radius:30px; background-color:  #C8E4FD;">
+					<option value="namasungai1">Aranio</option>
+					<option value="namasungai2">Karang Intan</option>
+					<option value="namasungai3">Sungai Kembang</option>
+					<option value="namasungai4">Sungai Asam</option>
+			<input type="submit" value="Pilih" style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width: 80px; background-color: #C8E4FD; outline: none;">
+			<a href="monitoring.php"><button value="#" style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width: 80px; background-color: #C8E4FD; outline: none;">Reset</button></a>
+		</form>
 	<div> 
-	<div class="nameRiver" style="background-color: #C8E4FD; padding: 20px 20px; margin-left: 500px; margin-right: 500px; border-radius: 30px; color: black">Nama Sungai</div>
+	<div class="nameRiver" style="background-color: #C8E4FD; padding: 20px 20px; margin-left: 500px; margin-right: 500px; border-radius: 30px; color: black"><?php echo $tpeg['nama_sungai']; ?></div>
 			<h2 style="background-color: #C8E4FD; font-size: 35px; padding-left: 30px; padding-right: 30px; color: black; margin-right: 970px; border-radius:30px; border: 1px solid black; text-align: center;">Kandungan Air</h2>
 		<div class="Ph">
-			<form action="#" method="GET">
-				<div style="margin-left: 30px; display: flex; font-size:30px; align: left; text-align:left; line-height: 55px; font-family: 'Patrick Hand', cursive;">
-				<tr>
-					<td>Kandungan yang terdapat pada sungai yaitu : </td>
-					<br>
-					<td>F.Coli:</td>
-					<td>ml</td>
-				</tr>
+		<form action="#" method="GET">
+			<div style="margin-left: 30px; display: flex; font-size:30px; align: left; text-align:left; line-height: 55px; font-family: 'Patrick Hand', cursive;">
+			<tr>
+				<td>Kandungan yang terdapat pada sungai yaitu : </td>
 				<br>
-				<tr>
-					<td>TSS:</td>
-					<td>mg/L</td>
-				</tr>
-				<br>
-				<tr>
-					<td>BOD:</td>
-					<td>mg/L</td>
-				</tr>
-				<br>
-				<tr>
-					<td>COD:</td>
-					<td>mg/L</td>
-				</tr>
-				<br>
-				<tr>
-					<td>DO:</td>
-					<td>mg/L</td>
-				</tr>
-				<br>
-				<tr>
-					<td>PH:</td>
-					<td></td>
-				</tr>
-				<br>
-				<tr>
-					<td>NO:</td>
-					<td>mg/L</td>
-				</tr>
-				<br>
-				<tr>
-					<td>PO:</td>
-					<td>mg/L</td>
-				</tr>
-				<br>
-				<img width="600px" height="400px" style="padding:50px 50px; margin-left:70px; padding-left:50px; padding-right:50px; border-radius: 80px;" src = "image/<?php echo $tpeg['img'];?>">
-	
-			</div>
-			</form>
+				<td>F.Coli:</td>
+				<td><?php echo $tpeg['fcoli']; ?>ml</td>
+			</tr>
+			<br>
+			<tr>
+				<td>TSS:</td>
+				<td> <?php echo $tpeg['tss']; ?>mg/L</td>
+			</tr>
+			<br>
+			<tr>
+				<td>BOD:</td>
+				<td> <?php echo $tpeg['bod']; ?> mg/L</td>
+			</tr>
+			<br>
+			<tr>
+				<td>COD:</td>
+				<td> <?php echo $tpeg['cod']; ?>mg/L</td>
+			</tr>
+			<br>
+			<tr>
+				<td>DO:</td>
+				<td> <?php echo $tpeg['do']; ?>mg/L</td>
+			</tr>
+			<br>
+			<tr>
+				<td>PH:</td>
+				<td> <?php echo $tpeg['ph']; ?></td>
+			</tr>
+			<br>
+			<tr>
+				<td>NO:</td>
+				<td> <?php echo $tpeg['no']; ?>mg/L</td>
+			</tr>
+			<br>
+			<tr>
+				<td>PO:</td>
+				<td><?php echo $tpeg['do']; ?>mg/L</td>
+			</tr>
+			<br>
+			<img width="600px" height="400px" style="padding:50px 50px; margin-left:70px; padding-left:50px; padding-right:50px; border-radius: 80px;" src = "image/<?php echo $tpeg['img'];?>">
+			<!-- <img src = "image/Sungai Aranio.jpg"> -->
+		</div>
+		</form>
+		<?php
+		}
+		?>
 		</div>
 			<h2 style="background-color: #C8E4FD; font-size: 35px; padding-left: 30px; padding-right: 30px; color: black; margin-right: 970px; border-radius:30px; border: 1px solid black; text-align: center;">Analisis Kualitas Air</h2>
 		<div class="air">
@@ -203,7 +210,6 @@
 		</div>
 	</div>
 	<script src="monitoring.js">
-		JSON.parse(localStorage.getItem("KI"));
 	</script>
 </body>
 </html>

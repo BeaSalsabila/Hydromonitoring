@@ -1,3 +1,11 @@
+body {
+   background: url(abstract-pool-water-surface-background-with-sun-light-reflection.jpg) no-repeat center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
 ul {
   position: absolute;
   top: 5%;
@@ -26,7 +34,7 @@ ul li:last-child {
 
 ul li a{
   text-decoration: none;
-  padding: 0 100px;
+  padding: 0 90px;
   display: block;
   padding-top: 20px;
 }
@@ -44,7 +52,7 @@ ul li a .icons .fa {
   line-height: 35px;
   font-size: 27px;
   transition: 0.5s;
-  color: skyblue;
+  color: white;
 }
 
 ul li a .icons .fa:last-child {
@@ -65,7 +73,7 @@ ul li a .name {
 ul li a .name span {
   display: block;
   position: relative;
-  color: skyblue;
+  color: white;
   font-size: 20px;
   line-height: 20px;
   transition: 0.5s;
@@ -284,7 +292,7 @@ body::-webkit-scrollbar-thumb {
 }
 .team-block .inner-box{
     position:relative;
-    padding:40px 70px 28px 0px;
+    padding:40px 70px 100px 0px;
 }
 
 .team-block .inner-box:before{
@@ -344,7 +352,7 @@ body::-webkit-scrollbar-thumb {
     position:relative;
     text-align:left;
     z-index:1;
-    padding:30px 15px 0px 110px;
+    padding:10px 5px 10px 90px;
 }
 
 .team-block .inner-box .lower-content h3{
@@ -384,6 +392,10 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 767px) {
   .team-block .inner-box:hover::after{
     width:88%;
+}
+
+.team-block .inner-box {
+    padding-right: 20px;
 }
 }
 

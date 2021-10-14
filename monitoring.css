@@ -11,6 +11,10 @@ html {
   padding: 0;
 }
 
+.table .tr {
+  font-size: 30px;
+}
+
 ul {
   position: absolute;
   top: 5%;
@@ -30,7 +34,6 @@ ul li {
   list-style: none;
   text-align: center;
   display: block;
-  border-right: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 ul li:last-child {
@@ -39,7 +42,7 @@ ul li:last-child {
 
 ul li a{
   text-decoration: none;
-  padding: 0 100px;
+  padding: 0 85px;
   display: block;
   padding-top: 20px;
   padding-left: 105px;
