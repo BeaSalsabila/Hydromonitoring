@@ -1,0 +1,274 @@
+<?php include "data.php"; ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>HYDROMONITORING</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="monitoring.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Kaushan+Script&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+	.keadaan .baku {
+		padding:20px 20px;
+		margin-right:20px;
+	}
+	.keadaan {
+		overflow:hidden;
+		overflow-y: scroll;
+	}
+
+    .air .cara {
+		padding:20px 20px;
+		margin-right:20px;
+	}
+
+	.air {
+		overflow:hidden;
+		overflow-y: scroll;
+	}
+
+	.air::-webkit-scrollbar {
+ 	 width: 15px;      
+	  border-radius: 30px;     
+	}
+
+	.air::-webkit-scrollbar-track {
+ 	 background: white;        
+	  border-radius: 30px;
+	}
+
+	.air::-webkit-scrollbar-thumb {
+	  background-color: skyblue;    
+	  border-radius: 30px;      
+  	  border: 3px solid white;
+	}
+
+	.keadaan::-webkit-scrollbar {
+ 	 width: 15px;      
+	  border-radius: 30px;     
+	}
+
+	.keadaan::-webkit-scrollbar-track {
+ 	 background: white;        
+	  border-radius: 30px;
+	}
+
+	.keadaan::-webkit-scrollbar-thumb {
+	  background-color: skyblue;    
+	  border-radius: 30px;      
+  	  border: 3px solid white;
+	}
+
+	.keadaan {
+		height:700px;
+	}
+
+	.air li {
+		font-size: 20px;
+		margin-left: 40px;
+	}
+
+	 
+	ul li {
+		border-right:none;
+	}
+</style>
+<body>
+	<div class="menuToggle">Menu</div>
+	<ul>
+		<li>
+			<a href="index.html">
+			<div class="icons">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<i class="fa fa-home" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Home"></i>Home</span></div>
+			</a>
+		</li>
+		<li>
+			<a href="About.html">
+				<div class="icons">
+					<i class="fa fa-users" aria-hidden="true"></i>
+					<i class="fa fa-users" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="About"></i>About</span></div>
+			</a>
+		</li>
+		<li>
+			<a href="monitoring.html">
+				<div class="icons">
+					<i class="fa fa-thermometer-empty" aria-hidden="true"></i>
+					<i class="fa fa-thermometer-empty" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Monitoring"></i>Monitoring</span></div>
+			</a>
+		</li>
+		<li>
+			<a href="Edukasi.html">
+				<div class="icons">
+					<i class="fa fa-book" aria-hidden="true"></i>
+					<i class="fa fa-book" aria-hidden="true"></i>
+				</div>
+				<div class="name"><span data-text="Edukasi"></i>Edukasi</span></div>
+			</a>
+		</li>
+	</ul>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div style="text-align: center;">
+		<a href="monitoring1.html"><button style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width:150px; background-color: #C8E4FD; outline: none;">Aranio</button></a>
+		<a href="monitoring2.html"><button style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width:150px; background-color: #C8E4FD; outline: none;">Karang Intan</button></a>
+		<a href="monitoring3.html"><button style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width:150px; background-color: #C8E4FD; outline: none;">Sungai Kembang</button></a>
+		<a href="monitoring4.html"><button style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width:150px; background-color: #C8E4FD; outline: none;">Sungai Asam</button></a>
+        <a href="monitoring5.html"><button style=" font-size: 20px; font-family: 'Patrick Hand', cursive; margin-top: 40px; border-radius:18px; height: 32px; width:150px; background-color: #C8E4FD; outline: none;">Mangkalawat</button></a>
+    </div>
+	<div> 
+	<div class="nameRiver" style="background-color: #C8E4FD; padding: 20px 20px; margin-left: 500px; margin-right: 500px; border-radius: 30px; color: black">Mangkalawat</div>
+			<h2 style="background-color: #C8E4FD; font-size: 35px; padding-left: 30px; padding-right: 30px; color: black; margin-right: 970px; border-radius:30px; border: 1px solid black; text-align: center;">Kandungan Air</h2>
+		<div class="Ph">
+				<div style="margin-left: 30px; display: flex; font-size:30px; align: left; text-align:left; line-height: 55px; font-family: 'Patrick Hand', cursive;">
+				<tr>
+					<td>Kandungan yang terdapat pada sungai yaitu : </td>
+					<br>
+					<td>F.Coli:</td>
+					<td>1675,25 ml</td>
+				</tr>
+				<br>
+				<tr>
+					<td>TSS:</td>
+					<td>68 mg/L</td>
+				</tr>
+				<br>
+				<tr>
+					<td>BOD:</td>
+					<td>0,96 mg/L</td>
+				</tr>
+				<br>
+				<tr>
+					<td>COD:</td>
+					<td>24,32 mg/L</td>
+				</tr>
+				<br>
+				<tr>
+					<td>DO:</td>
+					<td>7,225 mg/L</td>
+				</tr>
+				<br>
+				<tr>
+					<td>PH:</td>
+					<td>7,465</td>
+				</tr>
+				<br>
+				<tr>
+					<td>NO:</td>
+					<td>0,705 mg/L</td>
+				</tr>
+				<br>
+				<tr>
+					<td>PO:</td>
+					<td>0,11925 mg/L</td>
+				</tr>
+				<br>
+				<img width="600px" height="400px" style="padding:50px 50px; margin-left:70px; padding-left:50px; padding-right:50px; border-radius: 80px;" src = "image/sungai mangkalawat.jpg">
+	
+			</div>
+		</div>
+			<h2 style="background-color: #C8E4FD; font-size: 35px; padding-left: 30px; padding-right: 30px; color: black; margin-right: 970px; border-radius:30px; border: 1px solid black; text-align: center;">Analisis Kualitas Air</h2>
+			<div class="air" style="text-align: left;">
+				<p style="font-size: 25px; margin-left: 40px;" >
+					<br>
+					Tatacara Penjernihan Air Dikalangan Rumah Tangga
+					<br>
+                    <br>
+                    <p style="font-size: 20px; margin-left: 40px;">
+                        air di dalam Mangkalawat kekeruhannya mencapai lebih dari baku mutu kandungan air 
+                        yang mana terdiri dari Fecal Coli dan Total Suspended Solid(TSS). 
+                        Maka mikroorganisme di dalam air kurang bisa mengurai bahan organik di dalam air
+                        sehingga bakteri yang ada didalam sungai menjadi lebih dari 1000mg/L dan 50mg/L. 
+                        ph air yang di miliki Mangkalawat mencapai batas konsumsi oleh karena itu,
+                        jika ingin mengkonsumsi atau dijadikan bahan kebutuhan harus dilakukan dengan beberapa cara yaitu :
+                    </p>
+                    <br>
+					<li>1. Rebus. </li>
+					<br>
+					<p style="font-size: 18px; margin-left: 40px;">Merebus air selama kurang lebih lima menit dapat mematikan bakteri, 
+					kuman dan virus yang terkandung di air. Diamkan sejenak hingga dingin dan 
+					setelah itu air layak diminum. Cara Ini dilakukan apabila terdapat kandungan bakteri E.COLI 
+					pada air tersebut yang berjumlah lebih dari 0%.</p>
+					<br>
+					<li> 2. Saring.</li> 
+					<br>
+					<p style="font-size: 18px; margin-left: 40px;">Cara lainnya adalah filtrasi atau penyaringan. 
+					Ini efektif sebagai cara menjernihkan air keruh secara sederhana. 
+					Dengan menyaring air menggunakan alat filter air, senyawa-senyawa kecil dapat dihilangkan dengan proses kimia. 
+					Air tetap aman diminum tanpa mengurangi rasa atau menimbulkan bau tidak sedap. 
+					Baca artikel lain untuk memahami penyaring air rumah tangga dan air minum. 
+					Cara ini dilakukan apabila tingkat kekeruhan air melebihi 50 TCU</p>
+					<br>
+					<li>3. Distilasi atau penyulingan.</li>  
+					<br>
+					<p style="font-size: 18px; margin-left: 40px;">Air yang menjadi sumber titik didih dibiarkan hingga menguap. 
+					Uap ini kemudian diarahkan ke kondensor agar dingin dan uap akan berubah menjadi air yang siap untuk diminum.</p>
+					<br>
+					<li>4. Klorinasi. </li> 
+					<br>
+					<p style="font-size: 18px; margin-left: 40px;">Menggunakan tablet atau cairan klorin dapat membunuh kuman, 
+					parasit dan organisme penyebab penyakit lainnya yang dapat ditemukan di air tanah, 
+					sumur atau ledeng. Perlu diketahui, jika Anda penderita tiroid, disarankan untuk berkonsultasi 
+					dengan dokter terlebih dahulu sebelum menggunakan klorin pada air. Hal penting yang perlu diingat adalah 
+					larutkan tablet atau cairan klorin di air bersuhu di atas 21 derajat Celsius.</p>
+			</div>
+			<h2 style="background-color: #C8E4FD; font-size: 35px; padding-left: 30px; padding-right: 30px; color: black; margin-right: 970px; border-radius:30px; border: 1px solid black; text-align: center;">Standar Baku</h2>
+		<div class="keadaan" style="font-size:20px; text-align:left;">
+		<div class="baku">
+		<img src="Baku Mutu.png" width="1000px" height="600px" style="margin-top:30px; border-radius:30px; margin-left:190px;"> 
+			<p style="font-size:25px;">
+			Pengertian - Pengertian Kandungan Air:
+			<br>
+			<br>
+			<li>Chemical Oxygen Demand (COD)</li>
+			Merupakan kebutuhan oksigen kimia untuk mengurai seluruh bahan organic yang Terkandung dalam air, Standar Baku Mutu Dari Kandungan COD yaitu 25mg/L
+			<br>
+			<br>
+			<li>Biological Oxygen Demand (BOD)</li>
+			Merupakan jumlah oksigen terlarut yang diperlukan oleh mikroorganisme untuk mengurai Bahan organic didalam air Standar Baku Mutu Dari Kandungan BOD yaitu 3mg/L
+			<br>
+			<br>
+			<li>Dissolved Oxygen (DO)</li>
+			Merupakan kandungan oksigen yang berasal dari fotosintesa dan absorbs atmosfer/udara. Dan Terlarut di dalam air sebagai parameter untuk mengukur Kualitas air serta proses pengolahan Limbah organik maupun anorganik. Standar Baku Mutu Dari Kandungan DO yaitu 4mg/L
+			<br>
+			<br>
+			<li>Total suspended solid (TSS)</li>
+			Merupakan residu dari padatan total yang tertahan oleh saringan dengan ukuran partikel maksimal 2μm (Mikrometer) atau lebih besar dari ukuran partikel koloid.  Standar Baku Mutu Dari Kandungan TSS yaitu 50mg/L
+			<br>
+			<br>
+			<li>Coliform Fecal (Bakteri Feral Coli)</li>
+			Merupakan Bakteri yang digunakan sebagai indikator pendeteksi Virus, Protozoa dan Parasite dalam pencemaran air.  Standar Baku Mutu Dari Kandungan Fecal Colli yaitu 1000ml
+			<br>
+			<br>
+			<li>Power of Hydrogen (PH)</li>
+			Merupakan derajat keasaman atau kebasaan suatu larutan, menyatakan logaritma negative Konsentrasi ion H dengan bilangan pokok 10. Larutan netral mempunyai PH 7, asam lebih Kecil dari 7, basa lebih besar dari 7. Di perairan yang tidak tercemar PH di control oleh ion CO2, Carbonate dan Bicarbonate. Standar Baku Mutu Dari Kandungan pH yaitu 6-9
+			<br>
+			<br>
+			<li>Nitrat (NO3 -N)</li>
+			Merupakan bentuk utama nitrogen di perairan alami dan merupakan nutrient utama bagi pertumbuhan tanaman dan algae. Nitrat sangat mudah larut dalam air dan bersifat stabil.  Standar Baku Mutu Dari Kandungan NO3 -N yaitu 10mg/L
+			<br>
+			<br>
+			<li>Fosfat (PO4)</li>
+			Merupakan  bentuk fosfor yang dapat dimanfaatkan oleh tumbuhan dan merupakan unsur esensial bagi tumbuhan tingkat tinggi dan algae sehingga dapat mempengaruhi tingkat produktivitas perairan. Standar Baku Mutu Dari Kandungan PO4 yaitu 0,2mg/L
+			</p>
+			
+		</div>
+		</div>
+	</div>
+	<script src="monitoring.js">
+		JSON.parse(localStorage.getItem("KI"));
+	</script>
+</body>
+</html>
